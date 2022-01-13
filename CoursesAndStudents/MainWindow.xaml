@@ -1,0 +1,33 @@
+﻿<Window x:Class="CoursesAndStudents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoursesAndStudents"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="400">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+    </Window.Resources>
+    
+    <StackPanel>
+        <Button Click="ShowStudents">Show Students</Button>
+        <Button Click="ShowCourses">Show Courses</Button>
+
+        <ComboBox Name="cbxStudents"></ComboBox>
+        <ComboBox Name="cbxCourses"></ComboBox>
+        
+        <Button Click="AddStudents2Courses">Add student to course</Button>
+
+        <Button Click="ShowEnrollments">Show enrollments</Button>
+
+        <Button Click="TestLazyLoading">Test Lazy Loading</Button>
+        
+        <DataGrid ColumnWidth="*" Margin="10" Name="dg"></DataGrid>
+    </StackPanel>
+</Window>
