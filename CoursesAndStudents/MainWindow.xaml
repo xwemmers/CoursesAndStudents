@@ -27,6 +27,8 @@
         <Button Click="ShowEnrollments">Show enrollments</Button>
 
         <Button Click="TestLazyLoading">Test Lazy Loading</Button>
+        <Button Click="TestLazyLoading2">Test Lazy Loading 2</Button>
+        <Button Click="TestLazyLoading3">Test Lazy Loading 3</Button>
         
         <DataGrid ColumnWidth="*" Margin="10" Name="dg"></DataGrid>
     </StackPanel>
